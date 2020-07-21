@@ -1,0 +1,740 @@
+[debug] [2019-06-01T21:34:11.338Z] ----------------------------------------------------------------------
+[debug] [2019-06-01T21:34:11.340Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-06-01T21:34:11.340Z] CLI Version:   6.10.0
+[debug] [2019-06-01T21:34:11.340Z] Platform:      win32
+[debug] [2019-06-01T21:34:11.340Z] Node Version:  v10.16.0
+[debug] [2019-06-01T21:34:11.341Z] Time:          Sat Jun 01 2019 15:34:11 GMT-0600 (Mountain Daylight Time)
+[debug] [2019-06-01T21:34:11.341Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-01T21:34:11.347Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-01T21:34:11.348Z] > authorizing via signed-in user
+[debug] [2019-06-01T21:34:11.348Z] [iam] checking project caineandrebekah-alpha for permissions ["firebase.projects.get"]
+[debug] [2019-06-01T21:34:11.349Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/caineandrebekah-alpha:testIamPermissions  
+
+[debug] [2019-06-01T21:34:11.809Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-01T21:34:11.810Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/caineandrebekah-alpha  
+ 
+[debug] [2019-06-01T21:34:12.113Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha'...
+[info] 
+[info] +  functions: Using node@10 from host.
+[debug] [2019-06-01T21:34:12.118Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/418691386198/clients/_:getWebAppConfig  
+ 
+[debug] [2019-06-01T21:34:12.119Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/418691386198:getServerAppConfig  
+ 
+[debug] [2019-06-01T21:34:12.548Z] <<< HTTP RESPONSE 200
+[info] +  functions: Emulator started at http://localhost:5001
+[debug] [2019-06-01T21:34:12.587Z] <<< HTTP RESPONSE 200
+[info] i  functions: Watching "C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions" for Cloud Functions...
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2019-06-01T21:34:12.953Z] Functions runtime initialized.
+[debug] [2019-06-01T21:34:12.953Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-01T21:34:13.503Z] firebase-admin has been stubbed.
+[info] i  Your code has been provided a "firebase-admin" instance.
+[info] i  functions: HTTP trigger initialized at http://localhost:5001/caineandrebekah-alpha/us-central1/addUser
+[debug] [2019-06-01T21:34:43.867Z] Accepted request GET /caineandrebekah-alpha/us-central1/addUser --> addUser
+[debug] [2019-06-01T21:34:44.189Z] Functions runtime initialized.
+[info] i  functions: Beginning execution of "addUser"
+[debug] [2019-06-01T21:34:44.191Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-01T21:34:44.808Z] firebase-admin has been stubbed.
+[info] i  Your code has been provided a "firebase-admin" instance.
+[debug] [2019-06-01T21:34:44.865Z] Trigger "addUser" has been found, beginning invocation!
+[debug] [2019-06-01T21:34:44.865Z] 
+[debug] [2019-06-01T21:34:44.865Z] Running addUser in mode HTTPS
+[debug] [2019-06-01T21:34:44.871Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\caine\\Desktop\\dev\\firebase\\caineandrebekah-alpha\\functions\\10604"}
+[debug] [2019-06-01T21:34:44.872Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\caine\\Desktop\\dev\\firebase\\caineandrebekah-alpha\\functions\\10604"}
+[debug] [2019-06-01T21:34:44.878Z] Ephemeral server used!
+[debug] [2019-06-01T21:34:45.068Z] Ephemeral server survived.
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Error getting documents { Error: 14 UNAVAILABLE: Getting metadata from plugin failed with error: invalid_grant
+[info] >      at Object.exports.createStatusError (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\common.js:91:15)
+[info] >      at ClientReadableStream._emitStatusIfDone (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client.js:233:26)
+[info] >      at ClientReadableStream._receiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client.js:211:8)
+[info] >      at Object.onReceiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:1272:15)
+[info] >      at InterceptingListener._callNext (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:568:42)
+[info] >      at InterceptingListener.onReceiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:618:8)
+[info] >      at C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:1029:24
+[info] >    code: 14,
+[info] >    metadata: Metadata { _internal_repr: {} },
+[info] >    details:
+[info] >     'Getting metadata from plugin failed with error: invalid_grant' }
+[info] >  Sat, 01 Jun 2019 21:35:23 GMT express deprecated res.send(status, body): Use res.status(status).send(body) instead at index.js:22:18
+[info] >  (node:10604) UnhandledPromiseRejectionWarning: RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: Error getting documents
+[info] >      at ServerResponse.writeHead (_http_server.js:209:11)
+[info] >      at ServerResponse._implicitHeader (_http_server.js:200:8)
+[info] >      at write_ (_http_outgoing.js:585:9)
+[info] >      at ServerResponse.end (_http_outgoing.js:702:5)
+[info] >      at ServerResponse.send (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:225:10)
+[info] >      at ServerResponse.json (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:271:15)
+[info] >      at ServerResponse.send (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:162:21)
+[info] >      at db.collection.get.then.catch (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\index.js:22:18)
+[info] >      at process._tickCallback (internal/process/next_tick.js:68:7)
+[info] >  (node:10604) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 3)
+[info] >  (node:10604) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[debug] [2019-06-01T21:36:13.490Z] File C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\index.js changed, reloading triggers
+[debug] [2019-06-01T21:36:14.821Z] Functions runtime initialized.
+[debug] [2019-06-01T21:36:14.822Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-01T21:36:15.014Z] File C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\index.js changed, reloading triggers
+[debug] [2019-06-01T21:36:15.428Z] firebase-admin has been stubbed.
+[info] i  Your code has been provided a "firebase-admin" instance.
+[debug] [2019-06-01T21:36:16.331Z] Functions runtime initialized.
+[debug] [2019-06-01T21:36:16.331Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-01T21:36:16.944Z] firebase-admin has been stubbed.
+[info] i  Your code has been provided a "firebase-admin" instance.
+[debug] [2019-06-01T21:36:20.135Z] File C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\index.js changed, reloading triggers
+[debug] [2019-06-01T21:36:21.452Z] Accepted request GET /caineandrebekah-alpha/us-central1/addUser --> addUser
+[debug] [2019-06-01T21:36:21.523Z] Functions runtime initialized.
+[debug] [2019-06-01T21:36:21.524Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-01T21:36:21.851Z] Functions runtime initialized.
+[info] i  functions: Beginning execution of "addUser"
+[debug] [2019-06-01T21:36:21.853Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-01T21:36:22.216Z] firebase-admin has been stubbed.
+[info] i  Your code has been provided a "firebase-admin" instance.
+[debug] [2019-06-01T21:36:22.493Z] firebase-admin has been stubbed.
+[info] i  Your code has been provided a "firebase-admin" instance.
+[debug] [2019-06-01T21:36:22.546Z] Trigger "addUser" has been found, beginning invocation!
+[debug] [2019-06-01T21:36:22.546Z] 
+[debug] [2019-06-01T21:36:22.546Z] Running addUser in mode HTTPS
+[debug] [2019-06-01T21:36:22.551Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\caine\\Desktop\\dev\\firebase\\caineandrebekah-alpha\\functions\\11920"}
+[debug] [2019-06-01T21:36:22.552Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\caine\\Desktop\\dev\\firebase\\caineandrebekah-alpha\\functions\\11920"}
+[debug] [2019-06-01T21:36:22.556Z] Ephemeral server used!
+[debug] [2019-06-01T21:36:22.751Z] Ephemeral server survived.
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Error getting documents { Error: 14 UNAVAILABLE: Getting metadata from plugin failed with error: invalid_grant
+[info] >      at Object.exports.createStatusError (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\common.js:91:15)
+[info] >      at ClientReadableStream._emitStatusIfDone (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client.js:233:26)
+[info] >      at ClientReadableStream._receiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client.js:211:8)
+[info] >      at Object.onReceiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:1272:15)
+[info] >      at InterceptingListener._callNext (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:568:42)
+[info] >      at InterceptingListener.onReceiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:618:8)
+[info] >      at C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:1029:24
+[info] >    code: 14,
+[info] >    metadata: Metadata { _internal_repr: {} },
+[info] >    details:
+[info] >     'Getting metadata from plugin failed with error: invalid_grant' }
+[info] >  Sat, 01 Jun 2019 21:37:02 GMT express deprecated res.send(status, body): Use res.status(status).send(body) instead at index.js:22:18
+[info] >  (node:11920) UnhandledPromiseRejectionWarning: RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: Error getting documents
+[info] >      at ServerResponse.writeHead (_http_server.js:209:11)
+[info] >      at ServerResponse._implicitHeader (_http_server.js:200:8)
+[info] >      at write_ (_http_outgoing.js:585:9)
+[info] >      at ServerResponse.end (_http_outgoing.js:702:5)
+[info] >      at ServerResponse.send (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:225:10)
+[info] >      at ServerResponse.json (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:271:15)
+[info] >      at ServerResponse.send (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:162:21)
+[info] >      at db.collection.get.then.catch (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\index.js:22:18)
+[info] >      at process._tickCallback (internal/process/next_tick.js:68:7)
+[info] >  (node:11920) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 3)
+[info] >  (node:11920) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[debug] [2019-06-01T21:38:21.488Z] Accepted request GET /caineandrebekah-alpha/us-central1/addUser --> addUser
+[debug] [2019-06-01T21:38:21.829Z] Functions runtime initialized.
+[info] i  functions: Beginning execution of "addUser"
+[debug] [2019-06-01T21:38:21.831Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-01T21:38:22.461Z] firebase-admin has been stubbed.
+[info] i  Your code has been provided a "firebase-admin" instance.
+[debug] [2019-06-01T21:38:22.523Z] Trigger "addUser" has been found, beginning invocation!
+[debug] [2019-06-01T21:38:22.523Z] 
+[debug] [2019-06-01T21:38:22.523Z] Running addUser in mode HTTPS
+[debug] [2019-06-01T21:38:22.531Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\caine\\Desktop\\dev\\firebase\\caineandrebekah-alpha\\functions\\21424"}
+[debug] [2019-06-01T21:38:22.532Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\caine\\Desktop\\dev\\firebase\\caineandrebekah-alpha\\functions\\21424"}
+[debug] [2019-06-01T21:38:22.536Z] Ephemeral server used!
+[debug] [2019-06-01T21:38:22.747Z] Ephemeral server survived.
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Error getting documents { Error: 14 UNAVAILABLE: Getting metadata from plugin failed with error: invalid_grant
+[info] >      at Object.exports.createStatusError (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\common.js:91:15)
+[info] >      at ClientReadableStream._emitStatusIfDone (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client.js:233:26)
+[info] >      at ClientReadableStream._receiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client.js:211:8)
+[info] >      at Object.onReceiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:1272:15)
+[info] >      at InterceptingListener._callNext (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:568:42)
+[info] >      at InterceptingListener.onReceiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:618:8)
+[info] >      at C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:1029:24
+[info] >    code: 14,
+[info] >    metadata: Metadata { _internal_repr: {} },
+[info] >    details:
+[info] >     'Getting metadata from plugin failed with error: invalid_grant' }
+[info] >  Sat, 01 Jun 2019 21:39:02 GMT express deprecated res.send(status, body): Use res.status(status).send(body) instead at index.js:22:18
+[info] >  (node:21424) UnhandledPromiseRejectionWarning: RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: Error getting documents
+[info] >      at ServerResponse.writeHead (_http_server.js:209:11)
+[info] >      at ServerResponse._implicitHeader (_http_server.js:200:8)
+[info] >      at write_ (_http_outgoing.js:585:9)
+[info] >      at ServerResponse.end (_http_outgoing.js:702:5)
+[info] >      at ServerResponse.send (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:225:10)
+[info] >      at ServerResponse.json (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:271:15)
+[info] >      at ServerResponse.send (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:162:21)
+[info] >      at db.collection.get.then.catch (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\index.js:22:18)
+[info] >      at process._tickCallback (internal/process/next_tick.js:68:7)
+[info] >  (node:21424) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 3)
+[info] >  (node:21424) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[debug] [2019-06-01T21:40:26.503Z] Accepted request GET /caineandrebekah-alpha/us-central1/addUser --> addUser
+[debug] [2019-06-01T21:40:26.832Z] Functions runtime initialized.
+[info] i  functions: Beginning execution of "addUser"
+[debug] [2019-06-01T21:40:26.833Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-01T21:40:27.454Z] firebase-admin has been stubbed.
+[info] i  Your code has been provided a "firebase-admin" instance.
+[debug] [2019-06-01T21:40:27.526Z] Trigger "addUser" has been found, beginning invocation!
+[debug] [2019-06-01T21:40:27.526Z] 
+[debug] [2019-06-01T21:40:27.527Z] Running addUser in mode HTTPS
+[debug] [2019-06-01T21:40:27.532Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\caine\\Desktop\\dev\\firebase\\caineandrebekah-alpha\\functions\\9460"}
+[debug] [2019-06-01T21:40:27.533Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\caine\\Desktop\\dev\\firebase\\caineandrebekah-alpha\\functions\\9460"}
+[debug] [2019-06-01T21:40:27.538Z] Ephemeral server used!
+[debug] [2019-06-01T21:40:27.753Z] Ephemeral server survived.
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Error getting documents { Error: 14 UNAVAILABLE: Getting metadata from plugin failed with error: invalid_grant
+[info] >      at Object.exports.createStatusError (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\common.js:91:15)
+[info] >      at ClientReadableStream._emitStatusIfDone (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client.js:233:26)
+[info] >      at ClientReadableStream._receiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client.js:211:8)
+[info] >      at Object.onReceiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:1272:15)
+[info] >      at InterceptingListener._callNext (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:568:42)
+[info] >      at InterceptingListener.onReceiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:618:8)
+[info] >      at C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:1029:24
+[info] >    code: 14,
+[info] >    metadata: Metadata { _internal_repr: {} },
+[info] >    details:
+[info] >     'Getting metadata from plugin failed with error: invalid_grant' }
+[info] >  Sat, 01 Jun 2019 21:41:07 GMT express deprecated res.send(status, body): Use res.status(status).send(body) instead at index.js:22:18
+[info] >  (node:9460) UnhandledPromiseRejectionWarning: RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: Error getting documents
+[info] >      at ServerResponse.writeHead (_http_server.js:209:11)
+[info] >      at ServerResponse._implicitHeader (_http_server.js:200:8)
+[info] >      at write_ (_http_outgoing.js:585:9)
+[info] >      at ServerResponse.end (_http_outgoing.js:702:5)
+[info] >      at ServerResponse.send (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:225:10)
+[info] >      at ServerResponse.json (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:271:15)
+[info] >      at ServerResponse.send (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:162:21)
+[info] >      at db.collection.get.then.catch (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\index.js:22:18)
+[info] >      at process._tickCallback (internal/process/next_tick.js:68:7)
+[info] >  (node:9460) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 3)
+[info] >  (node:9460) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[debug] [2019-06-01T21:42:56.516Z] Accepted request GET /caineandrebekah-alpha/us-central1/addUser --> addUser
+[debug] [2019-06-01T21:42:56.852Z] Functions runtime initialized.
+[info] i  functions: Beginning execution of "addUser"
+[debug] [2019-06-01T21:42:56.854Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-01T21:42:57.491Z] firebase-admin has been stubbed.
+[info] i  Your code has been provided a "firebase-admin" instance.
+[debug] [2019-06-01T21:42:57.575Z] Trigger "addUser" has been found, beginning invocation!
+[debug] [2019-06-01T21:42:57.575Z] 
+[debug] [2019-06-01T21:42:57.575Z] Running addUser in mode HTTPS
+[debug] [2019-06-01T21:42:57.581Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\caine\\Desktop\\dev\\firebase\\caineandrebekah-alpha\\functions\\13948"}
+[debug] [2019-06-01T21:42:57.582Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\caine\\Desktop\\dev\\firebase\\caineandrebekah-alpha\\functions\\13948"}
+[debug] [2019-06-01T21:42:57.587Z] Ephemeral server used!
+[debug] [2019-06-01T21:42:57.815Z] Ephemeral server survived.
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Error getting documents { Error: 14 UNAVAILABLE: Getting metadata from plugin failed with error: invalid_grant
+[info] >      at Object.exports.createStatusError (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\common.js:91:15)
+[info] >      at ClientReadableStream._emitStatusIfDone (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client.js:233:26)
+[info] >      at ClientReadableStream._receiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client.js:211:8)
+[info] >      at Object.onReceiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:1272:15)
+[info] >      at InterceptingListener._callNext (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:568:42)
+[info] >      at InterceptingListener.onReceiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:618:8)
+[info] >      at C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:1029:24
+[info] >    code: 14,
+[info] >    metadata: Metadata { _internal_repr: {} },
+[info] >    details:
+[info] >     'Getting metadata from plugin failed with error: invalid_grant' }
+[info] >  Sat, 01 Jun 2019 21:43:37 GMT express deprecated res.send(status, body): Use res.status(status).send(body) instead at index.js:22:18
+[info] >  (node:13948) UnhandledPromiseRejectionWarning: RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: Error getting documents
+[info] >      at ServerResponse.writeHead (_http_server.js:209:11)
+[info] >      at ServerResponse._implicitHeader (_http_server.js:200:8)
+[info] >      at write_ (_http_outgoing.js:585:9)
+[info] >      at ServerResponse.end (_http_outgoing.js:702:5)
+[info] >      at ServerResponse.send (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:225:10)
+[info] >      at ServerResponse.json (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:271:15)
+[info] >      at ServerResponse.send (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:162:21)
+[info] >      at db.collection.get.then.catch (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\index.js:22:18)
+[info] >      at process._tickCallback (internal/process/next_tick.js:68:7)
+[info] >  (node:13948) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 3)
+[info] >  (node:13948) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[debug] [2019-06-01T21:45:56.531Z] Accepted request GET /caineandrebekah-alpha/us-central1/addUser --> addUser
+[debug] [2019-06-01T21:45:56.850Z] Functions runtime initialized.
+[info] i  functions: Beginning execution of "addUser"
+[debug] [2019-06-01T21:45:56.851Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-01T21:45:57.501Z] firebase-admin has been stubbed.
+[info] i  Your code has been provided a "firebase-admin" instance.
+[debug] [2019-06-01T21:45:57.585Z] Trigger "addUser" has been found, beginning invocation!
+[debug] [2019-06-01T21:45:57.585Z] 
+[debug] [2019-06-01T21:45:57.585Z] Running addUser in mode HTTPS
+[debug] [2019-06-01T21:45:57.590Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\caine\\Desktop\\dev\\firebase\\caineandrebekah-alpha\\functions\\4780"}
+[debug] [2019-06-01T21:45:57.590Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\caine\\Desktop\\dev\\firebase\\caineandrebekah-alpha\\functions\\4780"}
+[debug] [2019-06-01T21:45:57.595Z] Ephemeral server used!
+[debug] [2019-06-01T21:45:57.800Z] Ephemeral server survived.
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Error getting documents { Error: 14 UNAVAILABLE: Getting metadata from plugin failed with error: invalid_grant
+[info] >      at Object.exports.createStatusError (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\common.js:91:15)
+[info] >      at ClientReadableStream._emitStatusIfDone (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client.js:233:26)
+[info] >      at ClientReadableStream._receiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client.js:211:8)
+[info] >      at Object.onReceiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:1272:15)
+[info] >      at InterceptingListener._callNext (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:568:42)
+[info] >      at InterceptingListener.onReceiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:618:8)
+[info] >      at C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:1029:24
+[info] >    code: 14,
+[info] >    metadata: Metadata { _internal_repr: {} },
+[info] >    details:
+[info] >     'Getting metadata from plugin failed with error: invalid_grant' }
+[info] >  Sat, 01 Jun 2019 21:46:37 GMT express deprecated res.send(status, body): Use res.status(status).send(body) instead at index.js:22:18
+[info] >  (node:4780) UnhandledPromiseRejectionWarning: RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: Error getting documents
+[info] >      at ServerResponse.writeHead (_http_server.js:209:11)
+[info] >      at ServerResponse._implicitHeader (_http_server.js:200:8)
+[info] >      at write_ (_http_outgoing.js:585:9)
+[info] >      at ServerResponse.end (_http_outgoing.js:702:5)
+[info] >      at ServerResponse.send (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:225:10)
+[info] >      at ServerResponse.json (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:271:15)
+[info] >      at ServerResponse.send (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:162:21)
+[info] >      at db.collection.get.then.catch (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\index.js:22:18)
+[info] >      at process._tickCallback (internal/process/next_tick.js:68:7)
+[info] >  (node:4780) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 3)
+[info] >  (node:4780) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[debug] [2019-06-01T21:52:56.548Z] Accepted request GET /caineandrebekah-alpha/us-central1/addUser --> addUser
+[debug] [2019-06-01T21:52:56.873Z] Functions runtime initialized.
+[info] i  functions: Beginning execution of "addUser"
+[debug] [2019-06-01T21:52:56.874Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-01T21:52:57.552Z] firebase-admin has been stubbed.
+[info] i  Your code has been provided a "firebase-admin" instance.
+[debug] [2019-06-01T21:52:57.618Z] Trigger "addUser" has been found, beginning invocation!
+[debug] [2019-06-01T21:52:57.618Z] 
+[debug] [2019-06-01T21:52:57.618Z] Running addUser in mode HTTPS
+[debug] [2019-06-01T21:52:57.623Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\caine\\Desktop\\dev\\firebase\\caineandrebekah-alpha\\functions\\660"}
+[debug] [2019-06-01T21:52:57.623Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\caine\\Desktop\\dev\\firebase\\caineandrebekah-alpha\\functions\\660"}
+[debug] [2019-06-01T21:52:57.628Z] Ephemeral server used!
+[debug] [2019-06-01T21:52:57.857Z] Ephemeral server survived.
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Error getting documents { Error: 14 UNAVAILABLE: Getting metadata from plugin failed with error: invalid_grant
+[info] >      at Object.exports.createStatusError (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\common.js:91:15)
+[info] >      at ClientReadableStream._emitStatusIfDone (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client.js:233:26)
+[info] >      at ClientReadableStream._receiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client.js:211:8)
+[info] >      at Object.onReceiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:1272:15)
+[info] >      at InterceptingListener._callNext (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:568:42)
+[info] >      at InterceptingListener.onReceiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:618:8)
+[info] >      at C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:1029:24
+[info] >    code: 14,
+[info] >    metadata: Metadata { _internal_repr: {} },
+[info] >    details:
+[info] >     'Getting metadata from plugin failed with error: invalid_grant' }
+[info] >  Sat, 01 Jun 2019 21:53:35 GMT express deprecated res.send(status, body): Use res.status(status).send(body) instead at index.js:22:18
+[info] >  (node:660) UnhandledPromiseRejectionWarning: RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: Error getting documents
+[info] >      at ServerResponse.writeHead (_http_server.js:209:11)
+[info] >      at ServerResponse._implicitHeader (_http_server.js:200:8)
+[info] >      at write_ (_http_outgoing.js:585:9)
+[info] >      at ServerResponse.end (_http_outgoing.js:702:5)
+[info] >      at ServerResponse.send (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:225:10)
+[info] >      at ServerResponse.json (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:271:15)
+[info] >      at ServerResponse.send (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:162:21)
+[info] >      at db.collection.get.then.catch (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\index.js:22:18)
+[info] >      at process._tickCallback (internal/process/next_tick.js:68:7)
+[info] >  (node:660) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 3)
+[info] >  (node:660) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[debug] [2019-06-01T22:04:56.565Z] Accepted request GET /caineandrebekah-alpha/us-central1/addUser --> addUser
+[debug] [2019-06-01T22:04:56.906Z] Functions runtime initialized.
+[info] i  functions: Beginning execution of "addUser"
+[debug] [2019-06-01T22:04:56.908Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-01T22:04:57.527Z] firebase-admin has been stubbed.
+[info] i  Your code has been provided a "firebase-admin" instance.
+[debug] [2019-06-01T22:04:57.593Z] Trigger "addUser" has been found, beginning invocation!
+[debug] [2019-06-01T22:04:57.593Z] 
+[debug] [2019-06-01T22:04:57.593Z] Running addUser in mode HTTPS
+[debug] [2019-06-01T22:04:57.598Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\caine\\Desktop\\dev\\firebase\\caineandrebekah-alpha\\functions\\5396"}
+[debug] [2019-06-01T22:04:57.599Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\caine\\Desktop\\dev\\firebase\\caineandrebekah-alpha\\functions\\5396"}
+[debug] [2019-06-01T22:04:57.603Z] Ephemeral server used!
+[debug] [2019-06-01T22:04:57.807Z] Ephemeral server survived.
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Error getting documents { Error: 14 UNAVAILABLE: Getting metadata from plugin failed with error: invalid_grant
+[info] >      at Object.exports.createStatusError (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\common.js:91:15)
+[info] >      at ClientReadableStream._emitStatusIfDone (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client.js:233:26)
+[info] >      at ClientReadableStream._receiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client.js:211:8)
+[info] >      at Object.onReceiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:1272:15)
+[info] >      at InterceptingListener._callNext (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:568:42)
+[info] >      at InterceptingListener.onReceiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:618:8)
+[info] >      at C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:1029:24
+[info] >    code: 14,
+[info] >    metadata: Metadata { _internal_repr: {} },
+[info] >    details:
+[info] >     'Getting metadata from plugin failed with error: invalid_grant' }
+[info] >  Sat, 01 Jun 2019 22:05:37 GMT express deprecated res.send(status, body): Use res.status(status).send(body) instead at index.js:22:18
+[info] >  (node:5396) UnhandledPromiseRejectionWarning: RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: Error getting documents
+[info] >      at ServerResponse.writeHead (_http_server.js:209:11)
+[info] >      at ServerResponse._implicitHeader (_http_server.js:200:8)
+[info] >      at write_ (_http_outgoing.js:585:9)
+[info] >      at ServerResponse.end (_http_outgoing.js:702:5)
+[info] >      at ServerResponse.send (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:225:10)
+[info] >      at ServerResponse.json (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:271:15)
+[info] >      at ServerResponse.send (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:162:21)
+[info] >      at db.collection.get.then.catch (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\index.js:22:18)
+[info] >      at process._tickCallback (internal/process/next_tick.js:68:7)
+[info] >  (node:5396) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 3)
+[info] >  (node:5396) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[debug] [2019-06-01T22:36:56.582Z] Accepted request GET /caineandrebekah-alpha/us-central1/addUser --> addUser
+[debug] [2019-06-01T22:36:56.922Z] Functions runtime initialized.
+[info] i  functions: Beginning execution of "addUser"
+[debug] [2019-06-01T22:36:56.925Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-01T22:36:57.529Z] firebase-admin has been stubbed.
+[info] i  Your code has been provided a "firebase-admin" instance.
+[debug] [2019-06-01T22:36:57.590Z] Trigger "addUser" has been found, beginning invocation!
+[debug] [2019-06-01T22:36:57.591Z] 
+[debug] [2019-06-01T22:36:57.591Z] Running addUser in mode HTTPS
+[debug] [2019-06-01T22:36:57.597Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\caine\\Desktop\\dev\\firebase\\caineandrebekah-alpha\\functions\\8308"}
+[debug] [2019-06-01T22:36:57.597Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\caine\\Desktop\\dev\\firebase\\caineandrebekah-alpha\\functions\\8308"}
+[debug] [2019-06-01T22:36:57.603Z] Ephemeral server used!
+[debug] [2019-06-01T22:36:57.803Z] Ephemeral server survived.
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Error getting documents { Error: 14 UNAVAILABLE: Getting metadata from plugin failed with error: invalid_grant
+[info] >      at Object.exports.createStatusError (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\common.js:91:15)
+[info] >      at ClientReadableStream._emitStatusIfDone (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client.js:233:26)
+[info] >      at ClientReadableStream._receiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client.js:211:8)
+[info] >      at Object.onReceiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:1272:15)
+[info] >      at InterceptingListener._callNext (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:568:42)
+[info] >      at InterceptingListener.onReceiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:618:8)
+[info] >      at C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:1029:24
+[info] >    code: 14,
+[info] >    metadata: Metadata { _internal_repr: {} },
+[info] >    details:
+[info] >     'Getting metadata from plugin failed with error: invalid_grant' }
+[info] >  Sat, 01 Jun 2019 22:37:37 GMT express deprecated res.send(status, body): Use res.status(status).send(body) instead at index.js:22:18
+[info] >  (node:8308) UnhandledPromiseRejectionWarning: RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: Error getting documents
+[info] >      at ServerResponse.writeHead (_http_server.js:209:11)
+[info] >      at ServerResponse._implicitHeader (_http_server.js:200:8)
+[info] >      at write_ (_http_outgoing.js:585:9)
+[info] >      at ServerResponse.end (_http_outgoing.js:702:5)
+[info] >      at ServerResponse.send (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:225:10)
+[info] >      at ServerResponse.json (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:271:15)
+[info] >      at ServerResponse.send (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:162:21)
+[info] >      at db.collection.get.then.catch (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\index.js:22:18)
+[info] >      at process._tickCallback (internal/process/next_tick.js:68:7)
+[info] >  (node:8308) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 3)
+[info] >  (node:8308) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[debug] [2019-06-01T23:08:56.599Z] Accepted request GET /caineandrebekah-alpha/us-central1/addUser --> addUser
+[debug] [2019-06-01T23:08:56.928Z] Functions runtime initialized.
+[info] i  functions: Beginning execution of "addUser"
+[debug] [2019-06-01T23:08:56.930Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-01T23:08:57.527Z] firebase-admin has been stubbed.
+[info] i  Your code has been provided a "firebase-admin" instance.
+[debug] [2019-06-01T23:08:57.583Z] Trigger "addUser" has been found, beginning invocation!
+[debug] [2019-06-01T23:08:57.584Z] 
+[debug] [2019-06-01T23:08:57.584Z] Running addUser in mode HTTPS
+[debug] [2019-06-01T23:08:57.590Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\caine\\Desktop\\dev\\firebase\\caineandrebekah-alpha\\functions\\2668"}
+[debug] [2019-06-01T23:08:57.591Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\caine\\Desktop\\dev\\firebase\\caineandrebekah-alpha\\functions\\2668"}
+[debug] [2019-06-01T23:08:57.598Z] Ephemeral server used!
+[debug] [2019-06-01T23:08:57.841Z] Ephemeral server survived.
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Error getting documents { Error: 14 UNAVAILABLE: Getting metadata from plugin failed with error: invalid_grant
+[info] >      at Object.exports.createStatusError (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\common.js:91:15)
+[info] >      at ClientReadableStream._emitStatusIfDone (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client.js:233:26)
+[info] >      at ClientReadableStream._receiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client.js:211:8)
+[info] >      at Object.onReceiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:1272:15)
+[info] >      at InterceptingListener._callNext (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:568:42)
+[info] >      at InterceptingListener.onReceiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:618:8)
+[info] >      at C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:1029:24
+[info] >    code: 14,
+[info] >    metadata: Metadata { _internal_repr: {} },
+[info] >    details:
+[info] >     'Getting metadata from plugin failed with error: invalid_grant' }
+[info] >  Sat, 01 Jun 2019 23:09:38 GMT express deprecated res.send(status, body): Use res.status(status).send(body) instead at index.js:22:18
+[info] >  (node:2668) UnhandledPromiseRejectionWarning: RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: Error getting documents
+[info] >      at ServerResponse.writeHead (_http_server.js:209:11)
+[info] >      at ServerResponse._implicitHeader (_http_server.js:200:8)
+[info] >      at write_ (_http_outgoing.js:585:9)
+[info] >      at ServerResponse.end (_http_outgoing.js:702:5)
+[info] >      at ServerResponse.send (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:225:10)
+[info] >      at ServerResponse.json (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:271:15)
+[info] >      at ServerResponse.send (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:162:21)
+[info] >      at db.collection.get.then.catch (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\index.js:22:18)
+[info] >      at process._tickCallback (internal/process/next_tick.js:68:7)
+[info] >  (node:2668) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 3)
+[info] >  (node:2668) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[debug] [2019-06-01T23:40:56.613Z] Accepted request GET /caineandrebekah-alpha/us-central1/addUser --> addUser
+[debug] [2019-06-01T23:40:56.932Z] Functions runtime initialized.
+[info] i  functions: Beginning execution of "addUser"
+[debug] [2019-06-01T23:40:56.934Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-01T23:40:57.545Z] firebase-admin has been stubbed.
+[info] i  Your code has been provided a "firebase-admin" instance.
+[debug] [2019-06-01T23:40:57.600Z] Trigger "addUser" has been found, beginning invocation!
+[debug] [2019-06-01T23:40:57.600Z] 
+[debug] [2019-06-01T23:40:57.601Z] Running addUser in mode HTTPS
+[debug] [2019-06-01T23:40:57.605Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\caine\\Desktop\\dev\\firebase\\caineandrebekah-alpha\\functions\\8972"}
+[debug] [2019-06-01T23:40:57.606Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\caine\\Desktop\\dev\\firebase\\caineandrebekah-alpha\\functions\\8972"}
+[debug] [2019-06-01T23:40:57.612Z] Ephemeral server used!
+[debug] [2019-06-01T23:40:57.813Z] Ephemeral server survived.
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Error getting documents { Error: 14 UNAVAILABLE: Getting metadata from plugin failed with error: invalid_grant
+[info] >      at Object.exports.createStatusError (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\common.js:91:15)
+[info] >      at ClientReadableStream._emitStatusIfDone (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client.js:233:26)
+[info] >      at ClientReadableStream._receiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client.js:211:8)
+[info] >      at Object.onReceiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:1272:15)
+[info] >      at InterceptingListener._callNext (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:568:42)
+[info] >      at InterceptingListener.onReceiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:618:8)
+[info] >      at C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:1029:24
+[info] >    code: 14,
+[info] >    metadata: Metadata { _internal_repr: {} },
+[info] >    details:
+[info] >     'Getting metadata from plugin failed with error: invalid_grant' }
+[info] >  Sat, 01 Jun 2019 23:41:35 GMT express deprecated res.send(status, body): Use res.status(status).send(body) instead at index.js:22:18
+[info] >  (node:8972) UnhandledPromiseRejectionWarning: RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: Error getting documents
+[info] >      at ServerResponse.writeHead (_http_server.js:209:11)
+[info] >      at ServerResponse._implicitHeader (_http_server.js:200:8)
+[info] >      at write_ (_http_outgoing.js:585:9)
+[info] >      at ServerResponse.end (_http_outgoing.js:702:5)
+[info] >      at ServerResponse.send (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:225:10)
+[info] >      at ServerResponse.json (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:271:15)
+[info] >      at ServerResponse.send (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:162:21)
+[info] >      at db.collection.get.then.catch (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\index.js:22:18)
+[info] >      at process._tickCallback (internal/process/next_tick.js:68:7)
+[info] >  (node:8972) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 3)
+[info] >  (node:8972) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[debug] [2019-06-02T00:12:56.627Z] Accepted request GET /caineandrebekah-alpha/us-central1/addUser --> addUser
+[debug] [2019-06-02T00:12:56.968Z] Functions runtime initialized.
+[info] i  functions: Beginning execution of "addUser"
+[debug] [2019-06-02T00:12:56.970Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-02T00:12:57.567Z] firebase-admin has been stubbed.
+[info] i  Your code has been provided a "firebase-admin" instance.
+[debug] [2019-06-02T00:12:57.625Z] Trigger "addUser" has been found, beginning invocation!
+[debug] [2019-06-02T00:12:57.625Z] 
+[debug] [2019-06-02T00:12:57.625Z] Running addUser in mode HTTPS
+[debug] [2019-06-02T00:12:57.632Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\caine\\Desktop\\dev\\firebase\\caineandrebekah-alpha\\functions\\4488"}
+[debug] [2019-06-02T00:12:57.633Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\caine\\Desktop\\dev\\firebase\\caineandrebekah-alpha\\functions\\4488"}
+[debug] [2019-06-02T00:12:57.638Z] Ephemeral server used!
+[debug] [2019-06-02T00:12:57.835Z] Ephemeral server survived.
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Error getting documents { Error: 14 UNAVAILABLE: Getting metadata from plugin failed with error: invalid_grant
+[info] >      at Object.exports.createStatusError (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\common.js:91:15)
+[info] >      at ClientReadableStream._emitStatusIfDone (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client.js:233:26)
+[info] >      at ClientReadableStream._receiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client.js:211:8)
+[info] >      at Object.onReceiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:1272:15)
+[info] >      at InterceptingListener._callNext (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:568:42)
+[info] >      at InterceptingListener.onReceiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:618:8)
+[info] >      at C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:1029:24
+[info] >    code: 14,
+[info] >    metadata: Metadata { _internal_repr: {} },
+[info] >    details:
+[info] >     'Getting metadata from plugin failed with error: invalid_grant' }
+[info] >  Sun, 02 Jun 2019 00:13:39 GMT express deprecated res.send(status, body): Use res.status(status).send(body) instead at index.js:22:18
+[info] >  (node:4488) UnhandledPromiseRejectionWarning: RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: Error getting documents
+[info] >      at ServerResponse.writeHead (_http_server.js:209:11)
+[info] >      at ServerResponse._implicitHeader (_http_server.js:200:8)
+[info] >      at write_ (_http_outgoing.js:585:9)
+[info] >      at ServerResponse.end (_http_outgoing.js:702:5)
+[info] >      at ServerResponse.send (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:225:10)
+[info] >      at ServerResponse.json (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:271:15)
+[info] >      at ServerResponse.send (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:162:21)
+[info] >      at db.collection.get.then.catch (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\index.js:22:18)
+[info] >      at process._tickCallback (internal/process/next_tick.js:68:7)
+[info] >  (node:4488) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 3)
+[info] >  (node:4488) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[debug] [2019-06-02T00:44:56.642Z] Accepted request GET /caineandrebekah-alpha/us-central1/addUser --> addUser
+[debug] [2019-06-02T00:44:56.974Z] Functions runtime initialized.
+[info] i  functions: Beginning execution of "addUser"
+[debug] [2019-06-02T00:44:56.976Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-06-02T00:44:57.570Z] firebase-admin has been stubbed.
+[info] i  Your code has been provided a "firebase-admin" instance.
+[debug] [2019-06-02T00:44:57.629Z] Trigger "addUser" has been found, beginning invocation!
+[debug] [2019-06-02T00:44:57.630Z] 
+[debug] [2019-06-02T00:44:57.630Z] Running addUser in mode HTTPS
+[debug] [2019-06-02T00:44:57.634Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\caine\\Desktop\\dev\\firebase\\caineandrebekah-alpha\\functions\\17436"}
+[debug] [2019-06-02T00:44:57.635Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\caine\\Desktop\\dev\\firebase\\caineandrebekah-alpha\\functions\\17436"}
+[debug] [2019-06-02T00:44:57.639Z] Ephemeral server used!
+[debug] [2019-06-02T00:44:57.823Z] Ephemeral server survived.
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Auth error:Error: invalid_grant
+[info] >  Error getting documents { Error: 14 UNAVAILABLE: Getting metadata from plugin failed with error: invalid_grant
+[info] >      at Object.exports.createStatusError (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\common.js:91:15)
+[info] >      at ClientReadableStream._emitStatusIfDone (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client.js:233:26)
+[info] >      at ClientReadableStream._receiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client.js:211:8)
+[info] >      at Object.onReceiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:1272:15)
+[info] >      at InterceptingListener._callNext (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:568:42)
+[info] >      at InterceptingListener.onReceiveStatus (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:618:8)
+[info] >      at C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\node_modules\grpc\src\client_interceptors.js:1029:24
+[info] >    code: 14,
+[info] >    metadata: Metadata { _internal_repr: {} },
+[info] >    details:
+[info] >     'Getting metadata from plugin failed with error: invalid_grant' }
+[info] >  Sun, 02 Jun 2019 00:45:38 GMT express deprecated res.send(status, body): Use res.status(status).send(body) instead at index.js:22:18
+[info] >  (node:17436) UnhandledPromiseRejectionWarning: RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: Error getting documents
+[info] >      at ServerResponse.writeHead (_http_server.js:209:11)
+[info] >      at ServerResponse._implicitHeader (_http_server.js:200:8)
+[info] >      at write_ (_http_outgoing.js:585:9)
+[info] >      at ServerResponse.end (_http_outgoing.js:702:5)
+[info] >      at ServerResponse.send (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:225:10)
+[info] >      at ServerResponse.json (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:271:15)
+[info] >      at ServerResponse.send (C:\Users\caine\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\response.js:162:21)
+[info] >      at db.collection.get.then.catch (C:\Users\caine\Desktop\dev\firebase\caineandrebekah-alpha\functions\index.js:22:18)
+[info] >      at process._tickCallback (internal/process/next_tick.js:68:7)
+[info] >  (node:17436) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 3)
+[info] >  (node:17436) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
